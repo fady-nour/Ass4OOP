@@ -87,15 +87,16 @@ namespace Ass4OOP
     {
         public override void DisplayMessage()
         {
-            Console.WriteLine("Message from BaseClass");
+            Console.WriteLine("Message from DerivedClass2");
         }
     }
     class DerivedClass2 : BaseClass
     {
         public new void DisplayMessage()
         {
-            Console.WriteLine("Message from BaseClass");
+            Console.WriteLine("Message from DerivedClass2");
         }
     }
     #endregion
+  
 }
