@@ -33,4 +33,27 @@ namespace Ass4OOP
             Height = height; }
     }
     #endregion
+    #region Q3
+    class Complex
+    {
+        public int Real { get; set; }
+        public int Imginary { get; set; }
+
+      
+        public static Complex operator +(Complex left, Complex right)
+        {
+            Complex C = new Complex()
+            {
+                Real = left.Real + right.Real,
+                Imginary = left.Imginary + right.Imginary
+
+            };
+            return C;
+        }
+        public override string ToString()
+        {
+            return $"{Real} + {Imginary}i";
+        }
+    }
+    #endregion
 }
