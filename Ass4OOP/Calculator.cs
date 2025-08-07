@@ -13,5 +13,24 @@ namespace Ass4OOP
         public static int Add(int x, int y,int z) {  return x + y+z; }
         public static double Add(double x, double y) { return x + y; }
         #endregion
+
     }
+    #region Q2
+    class Rectangle
+    {
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public Rectangle()
+        {
+            Width=0; Height=0;
+        }
+        public Rectangle(int S)
+        {
+            Width=S; Height=S;
+        }
+        public Rectangle(int width, int height) {
+            Width = width;
+            Height = height; }
+    }
+    #endregion
 }
